@@ -1,45 +1,44 @@
-📊 Sales Performance Data Analysis Dashboard
-Project Overview
-This project presents a dynamic and insightful Sales Performance Dashboard developed using Power BI. The goal was to transform raw sales data into actionable business intelligence by meticulously cleaning and modeling the data using Power Query and applying a professional, custom design created in Figma.
-The dashboard provides a holistic view of sales operations, allowing users to track key performance indicators (KPIs), analyze trends, and monitor performance across different territories and product categories.
-Description
-This dashboard is an interactive analysis tool built to monitor, measure, and optimize sales operations based on the provided dataset. We used Power Query to perform rigorous data cleaning—including handling status codes, date transformations, and ensuring data integrity—before constructing a star schema model in Power BI. The visualization layer leverages a custom, professional background designed in Figma to ensure maximum readability and a clean aesthetic. Key analysis pillars include tracking Total Revenue, Profitability, and deep dives into performance by Geographical Territory and Product Category.
-Key Features & Metrics
-The dashboard is designed to answer critical business questions and focuses on the following key areas and metrics:
-Sales Totals: Overall revenue and profitability analysis.
-Order Tracking: Status distribution (e.g., Shipped, Approved).
-Geographical Performance: Sales breakdown by Territory and Territory Group.
-Product Analysis: Performance of different Product Categories and Subcategories.
-Time-based Trends: Month-over-month or Year-over-Year sales comparisons.
-Technology Stack
-|
-| Tool | Purpose |
-| Power BI Desktop | Core platform for data modeling, visualization, and dashboard creation. |
-| Power Query (M Language) | Data extraction, transformation, and loading (ETL) process. Used for cleaning the raw data and preparing it for analysis. |
-| Figma | Custom UI/UX design and wireframing, used to create a professional, high-impact background and layout (
-$$`BackGround_DataAnalysis dashboard.png`$$
-). |
-| DAX | Calculation and analytical language used within Power BI to create measures and columns. |
-Data Source
-The analysis is based on a simulated sales dataset, structured as follows:
-File Name: Sales_Original.xlsx (specifically the Sales sheet)
-Focus: Detailed order and line-item data, including order dates, product information, territory details, and financial figures.
-Visual Showcase
-1. The Final Dashboard
-A snapshot of the finished, interactive dashboard, demonstrating the custom design and key visualizations.
-2. Data Model Design
-The relational model showing the relationship between tables, optimized for fast and accurate analytical queries.
-3. Custom Background (Figma)
-The custom design element used to enhance the aesthetic and structure of the report page.
-Files in this Repository
-| File Name | Description |
-| Data analysis Dashboard.pbix | The main Power BI file containing all data models, Power Query steps, DAX measures, and the final report pages. |
-| Sales_Original.xlsx - Sales.csv | The primary data source used for this project. |
-| Data analysis Dashboard.png | High-resolution image of the final dashboard. |
-| Modeling.png | Screenshot of the data model view in Power BI. |
-| BackGround_DataAnalysis dashboard.png | Image of the custom background designed in Figma. |
-How to View and Use
-To interact with the full dashboard:
-Prerequisite: Ensure you have Power BI Desktop installed on your system.
-Open the File: Download or clone this repository and open the file named Data analysis Dashboard.pbix directly in Power BI Desktop.
-Explore: You can now interact with the visuals, apply filters, and review the underlying data model and Power Query steps.
+📊 Sales Data Analysis Dashboard
+A comprehensive interactive dashboard built to provide key insights into sales performance, product categories, and regional trends.
+🌟 Overview
+This project provides a clear, interactive visualization of sales data, enabling stakeholders to track performance, identify top-selling products, and understand geographical contributions to total sales. The project leverages robust data cleaning, a defined data model, and a custom-designed user interface.
+🛠️ Technology Stack
+| Component | Tool Used | Purpose |
+|---|---|---|
+| Data Preparation & ETL | Power Query (within Power BI) | Cleaning, transforming, and loading raw sales data. |
+| Data Modeling & Analysis | Power BI Desktop | Creating relationships, defining measures (DAX), and building the interactive report. |
+| Visual Design & UX | Figma | Designing a custom, cohesive, and user-friendly dashboard background and layout. |
+🚀 Key Features
+ * Interactive Filters: Easily filter data by Territory, Product Category, and Time Period (e.g., Year/Quarter).
+ * Key Performance Indicators (KPIs): Instant visibility of total Line Total, Order Quantity, and Freight costs.
+ * Geographical Breakdown: Visual mapping and tables to understand sales distribution across different regions/territories.
+ * Product Insights: Analysis of performance by Product Category and Product SubCategory.
+📁 Project Structure
+ * Sales_Original.xlsx - Sales.csv: The raw source data used for the analysis.
+ * Data analysis Dashboard.pbix: The main Power BI project file containing the report, data model, and DAX calculations.
+ * Data analysis Dashboard.png / BackGround_DataAnalysis dashboard.png: Final dashboard preview and custom background image.
+ * Modeling.png: Screenshot of the Data Model showing table relationships.
+⚙️ How to View and Interact
+Prerequisites
+To open and interact with the .pbix file, you must have Power BI Desktop installed on your system.
+Steps
+ * Download the entire repository.
+ * Open the Data analysis Dashboard.pbix file using Power BI Desktop.
+ * The report will automatically refresh (if the data source path is maintained or updated).
+ * Use the slicers and visuals to cross-filter the data and explore different segments of the sales figures.
+✨ Design & Customization (Figma)
+The design of the dashboard, including the layout, color scheme, and specific background elements, was prototyped and created in Figma to ensure a professional and unique aesthetic.
+ * The custom background image (BackGround_DataAnalysis dashboard.png) was exported from the Figma design and imported into Power BI to serve as the visual foundation for the report.
+🧼 Data Preparation Details (Power Query)
+The raw data was transformed using Power Query (M Language) to ensure data quality and structure. Key steps included:
+ * Data Type Correction: Ensuring all numerical fields (e.g., LineTotal, OrderQty) and date fields (OrderDate, ShipDate) are correctly formatted.
+ * Missing Value Handling: Checking and cleaning any blank or null values.
+ * Date Dimension: Extracting Year, Quarter, and Month columns from the OrderDate for time intelligence analysis.
+🔗 Data Modeling (Power BI)
+The project uses a Star Schema to optimize performance and calculation simplicity.
+ * A central Fact Table (Sales data) is connected to smaller Dimension Tables (e.g., Product Category, Territory).
+ * Refer to Modeling.png for a visual representation of the established data model.
+📧 Contact
+For any questions or suggestions regarding this dashboard, please contact:
+Ahmed Ayman Mohammed Fayed 
+5000ahmedayman5000@gmail.com
